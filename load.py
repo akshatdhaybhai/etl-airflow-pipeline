@@ -1,7 +1,7 @@
 from mysql.connector import connect, Error
 import pandas as pd
 
-def load_to_mysql(df, host='localhost', port=3307, user='root', password='yourpassword', database='etl_pipeline'):
+def load_to_mysql(df, host='localhost', port=3306, user='root', password='yourpassword', database='etl_pipeline'):
     """
     Load cleaned DataFrame into MySQL using upsert pattern (idempotent).
     """
